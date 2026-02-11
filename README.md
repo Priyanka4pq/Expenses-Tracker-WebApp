@@ -1,58 +1,115 @@
-![Language](https://img.shields.io/badge/language-Java%20-blue.svg)
-![Technologies](https://img.shields.io/badge/technologies-Spring_boot%20-green.svg)
-![Technologies](https://img.shields.io/badge/technologies-Spring_MVC%20-green.svg)
-![Technologies](https://img.shields.io/badge/technologies-Spring_Security%20-green.svg)
-![Technologies](https://img.shields.io/badge/technologies-Spring_Data_jpa%20-green.svg)
-![Technologies](https://img.shields.io/badge/technologies-Thymeleaf_&_Bootstrap%20-purple.svg)
+Dockerized Expenses Tracker Web App
+Project Background
 
-# Expenses-Tracker-WebApp
-## Overview
-The Expenses Tracker App is a robust financial management solution developed using cutting-edge technologies such as Spring Boot, Spring Security, and MySQL. With user authentication and authorization features, users can securely sign up, sign in, and perform CRUD operations on their expenses. The app's intuitive interface, powered by Thymeleaf and Bootstrap, ensures a seamless user experience. The filtering functionality allows users to efficiently organize and analyze their financial data. Explore the power of streamlined expense tracking and financial control with this feature-rich application.<br> (Screenshots below for more illustration)
+This repository is forked from an existing Spring Boot–based Expenses Tracker application.
+The original project focuses on building a full-stack web application using Spring Boot, Spring Security, Thymeleaf, and MySQL.
 
-## Technologies Used
-- Java
-- Spring boot
-- Spring MVC
-- Spring Security
-- Spring Data (JPA)
-- MySQL
-- Thymeleaf
-- Bootstrap
+My contribution focuses on Dockerizing and deploying the application using modern containerization practices.
 
-## Features
-- **User Authentication and Authorization:** Securely sign up, sign in, and access the app with built-in authentication and authorization.
-- **CRUD Operations:** Perform essential financial tracking actions such as adding, reading, updating, and deleting expenses.
-- **Filtering:** Utilize the filtering feature to efficiently sort and view expenses based on various criteria.
+My Contribution (Docker & Deployment)
 
-## Getting Started
-1. **Clone the Repository:**
-`git clone https://github.com/your-username/expenses-tracker.git`
+I containerized the existing application to make it easy to run without installing Java, Maven, or MySQL locally.
 
-2. **Configure Database:**
-Set up MySQL database and update the application.properties file with your database configuration.
+What I Did
 
-3. **Build and Run:**
-Build the project using your preferred IDE or with Maven:
-`mvn clean install`.
+Dockerized the Spring Boot application
 
-4. **Run the application:**
-`java -jar target/expenses-tracker.jar`.
+Created a multi-container setup using Docker Compose
 
-5. **Access the App:**
-Open your web browser and navigate to `http://localhost:8080`.
+Added MySQL as a containerized database service
 
-## ScreenShots
-![Example Image](screenshots/1.png) <br>
-![Example Image](screenshots/2-2.png) <br>
-![Example Image](screenshots/3-3.png) <br>
-![Example Image](screenshots/4-4.png) <br>
-![Example Image](screenshots/5-5.png) <br>
-![Example Image](screenshots/6-6.png) <br>
-![Example Image](screenshots/7.png) <br>
-![Example Image](screenshots/8.png) <br>
+Integrated Nginx as a reverse proxy
 
-## Contributions
-Contributions are welcome! If you find a bug or have suggestions for improvement, feel free to open an issue or create a pull request.
+Configured container networking, ports, and persistent volumes
 
-## License
+Enabled one-command startup for the entire application
+
+Run the Application Using Docker (Recommended)
+Prerequisites
+
+Docker
+
+Docker Compose
+
+Steps
+
+docker-compose up --build
+
+Access
+
+Open your browser and go to:
+http://localhost
+
+No local Java required
+No Maven installation required
+No manual MySQL setup
+
+Everything runs inside containers.
+
+Technologies Used
+Application Stack
+
+Java
+
+Spring Boot
+
+Spring MVC
+
+Spring Security
+
+Spring Data JPA
+
+Thymeleaf
+
+Bootstrap
+
+DevOps / Containerization
+
+Docker
+
+Docker Compose
+
+Nginx
+
+MySQL
+
+Application Features
+
+User Authentication and Authorization
+Secure login and access control using Spring Security
+
+Expense Management (CRUD)
+Add, view, update, and delete expenses
+
+Filtering
+Filter expenses based on different criteria
+
+User-Friendly UI
+Built with Thymeleaf and Bootstrap
+
+Running Without Docker (Original Setup)
+
+If you prefer to run the app without Docker:
+
+Clone the repository
+https://github.com/Priyanka4pq/Expenses-Tracker-WebApp.git
+
+Configure MySQL database in application.properties
+
+Build the project
+mvn clean install
+
+Run the application
+java -jar target/expenses-tracker.jar
+
+Open in browser
+http://localhost:8080
+
+Credits
+
+Base Application: Original Spring Boot project by LondheShubham153
+Dockerization and Deployment: Done by Priyanka4pq
+
+License
+
 This project is licensed under the MIT License.
