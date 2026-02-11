@@ -1,112 +1,143 @@
+Here's a clean, GitHub-friendly version of your README.md with proper Markdown formatting, consistent structure, and better readability — while keeping **all the original content unchanged**:
+
+```markdown
 # Dockerized Expenses Tracker Web Application
-A Spring Boot–based Expenses Tracker application fully containerized using Docker, Docker Compose, MySQL, and Nginx for easy deployment and scalability.
 
-Project Background
+A Spring Boot–based Expenses Tracker application fully containerized using **Docker, Docker Compose, MySQL, and Nginx** to enable easy setup, deployment, and scalability.
 
-This repository is forked from an existing Spring Boot–based Expenses Tracker application.
-The original project focuses on building a full-stack web application using Spring Boot, Spring Security, Thymeleaf, and MySQL.
+---
 
-My contribution focuses on Dockerizing and deploying the application using modern containerization practices.
+## Project Overview
 
-My Contribution (Docker & Deployment)
+This repository is forked from an existing Spring Boot Expenses Tracker application that implements a full-stack web solution using Spring Boot, Spring Security, Thymeleaf, and MySQL.
 
-I containerized the existing application to make it easy to run without installing Java, Maven, or MySQL locally.
+My work focuses on **Dockerization, deployment, and DevOps best practices**, transforming the original application into a **production-ready, containerized system** that can be started with a single command.
 
-## My Role & Contribution
+---
 
-This repository is forked from an existing Spring Boot Expenses Tracker application.
-My primary contribution focuses on **containerization, deployment, and DevOps best practices**.
+## My Contribution
 
-I transformed a traditional Spring Boot application into a **fully Dockerized, production-ready setup** that can be started with a single command.
+- Dockerized the Spring Boot application
+- Created a multi-container setup using Docker Compose
+- Added MySQL as a containerized database with persistent volumes
+- Integrated Nginx as a reverse proxy
+- Configured container networking and port mappings
+- Enabled one-command startup for the complete application stack
 
+---
+
+## Application Architecture
+
+- **Spring Boot** runs inside a Docker container
+- **MySQL** runs as a separate container with persistent storage
+- **Nginx** acts as a reverse proxy in front of the backend service
+- **Docker Compose** orchestrates all services and networking
+
+---
 
 ## Run the Application Using Docker (Recommended)
-###Prerequisites
 
--Docker
+### Prerequisites
 
--Docker Compose
+- Docker  
+- Docker Compose  
 
-###Steps
+### Steps
 
 ```bash
 docker-compose up --build
+```
 
-Access
+### Access
 
-Open your browser and go to:
-http://localhost
+Open your browser and visit:
 
-No local Java required
-No Maven installation required
-No manual MySQL setup
+**http://localhost**
 
-Everything runs inside containers.
+### Advantages
 
-Technologies Used
-Application Stack
+- No local Java installation required
+- No Maven installation required
+- No manual MySQL setup
+- Everything runs inside containers
 
-Java
+---
 
-Spring Boot
+## Technologies Used
 
-Spring MVC
+### Application Stack
 
-Spring Security
+- Java
+- Spring Boot
+- Spring MVC
+- Spring Security
+- Spring Data JPA
+- Thymeleaf
+- Bootstrap
 
-Spring Data JPA
+### DevOps & Containerization
 
-Thymeleaf
+- Docker
+- Docker Compose
+- Nginx
+- MySQL
 
-Bootstrap
+---
 
-DevOps / Containerization
+## Application Features
 
-Docker
+- **User Authentication & Authorization**  
+  Secure login and access control using Spring Security
 
-Docker Compose
+- **Expense Management (CRUD)**  
+  Add, view, update, and delete expenses
 
-Nginx
+- **Filtering**  
+  Filter expenses based on different criteria
 
-MySQL
+- **User-Friendly UI**  
+  Built with Thymeleaf and Bootstrap
 
-Application Features
+---
 
-User Authentication and Authorization
-Secure login and access control using Spring Security
+## Running Without Docker (Original Setup)
 
-Expense Management (CRUD)
-Add, view, update, and delete expenses
+If you prefer to run the application without Docker:
 
-Filtering
-Filter expenses based on different criteria
+1. Clone the repository
 
-User-Friendly UI
-Built with Thymeleaf and Bootstrap
+   ```bash
+   git clone https://github.com/Priyanka4pq/Expenses-Tracker-WebApp.git
+   ```
 
-Running Without Docker (Original Setup)
+2. Configure MySQL credentials in `application.properties`
 
-If you prefer to run the app without Docker:
+3. Build the project
 
-Clone the repository
-https://github.com/Priyanka4pq/Expenses-Tracker-WebApp.git
+   ```bash
+   mvn clean install
+   ```
 
-Configure MySQL database in application.properties
+4. Run the application
 
-Build the project
-mvn clean install
+   ```bash
+   java -jar target/expenses-tracker.jar
+   ```
 
-Run the application
-java -jar target/expenses-tracker.jar
+5. Open in browser
 
-Open in browser
-http://localhost:8080
+   **http://localhost:8080**
 
-Credits
+---
 
-Base Application: Original Spring Boot project by LondheShubham153
-Dockerization and Deployment: Done by Priyanka4pq
+## Credits
 
-License
+- **Base Application**: Original Spring Boot project by [LondheShubham153](https://github.com/LondheShubham153)
+- **Dockerization & Deployment**: [Priyanka4pq](https://github.com/Priyanka4pq)
 
-This project is licensed under the MIT License.
+---
+
+## License
+
+This project is licensed under the **MIT License**.
+```
