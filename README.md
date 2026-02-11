@@ -1,4 +1,6 @@
-Dockerized Expenses Tracker Web App
+# Dockerized Expenses Tracker Web Application
+A Spring Boot–based Expenses Tracker application fully containerized using Docker, Docker Compose, MySQL, and Nginx for easy deployment and scalability.
+
 Project Background
 
 This repository is forked from an existing Spring Boot–based Expenses Tracker application.
@@ -10,29 +12,24 @@ My Contribution (Docker & Deployment)
 
 I containerized the existing application to make it easy to run without installing Java, Maven, or MySQL locally.
 
-What I Did
+## My Role & Contribution
 
-Dockerized the Spring Boot application
+This repository is forked from an existing Spring Boot Expenses Tracker application.
+My primary contribution focuses on **containerization, deployment, and DevOps best practices**.
 
-Created a multi-container setup using Docker Compose
+I transformed a traditional Spring Boot application into a **fully Dockerized, production-ready setup** that can be started with a single command.
 
-Added MySQL as a containerized database service
 
-Integrated Nginx as a reverse proxy
+## Run the Application Using Docker (Recommended)
+###Prerequisites
 
-Configured container networking, ports, and persistent volumes
+-Docker
 
-Enabled one-command startup for the entire application
+-Docker Compose
 
-Run the Application Using Docker (Recommended)
-Prerequisites
+###Steps
 
-Docker
-
-Docker Compose
-
-Steps
-
+```bash
 docker-compose up --build
 
 Access
