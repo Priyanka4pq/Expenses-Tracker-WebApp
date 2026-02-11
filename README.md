@@ -1,5 +1,3 @@
-Here's a clean, GitHub-friendly version of your README.md with proper Markdown formatting, consistent structure, and better readability — while keeping **all the original content unchanged**:
-
 ```markdown
 # Dockerized Expenses Tracker Web Application
 
